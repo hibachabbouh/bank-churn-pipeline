@@ -158,6 +158,12 @@ Once the Airflow DAG completes successfully (all tasks are green):
 - Explore the **Analytics Dashboard** for EDA and KPIs
 - Go to the **Churn Prediction** tab to input customer features and get real-time predictions from the trained Random Forest model
 
+## Key Achievements
+
+- Medallion Architecture implementation
+- Real-time streaming with Kafka
+- Cloud Data Warehouse with BigQuery
+- Interactive prediction dashboard
 
 ## Troubleshooting
 
@@ -179,4 +185,5 @@ Once the Airflow DAG completes successfully (all tasks are green):
 
 ## Author
 
-Built with ❤️ by Hiba Chabbouh
+Hiba Chabbouh
+Interests: MLOps, Generative AI, LLM Systems
