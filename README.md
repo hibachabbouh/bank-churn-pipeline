@@ -185,6 +185,11 @@ Once the Airflow DAG completes successfully (all tasks are green):
 
 ## Author
 
--Hiba Chabbouh
+Hiba Chabbouh
+Software Engineering Student @ INSAT
 
--Interests: MLOps, Generative AI, LLM Systems
+Interests:
+- MLOps
+- Generative AI
+- LLM Systems
+- Data Engineering
