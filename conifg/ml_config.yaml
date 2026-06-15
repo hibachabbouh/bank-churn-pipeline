@@ -1,0 +1,35 @@
+# Machine Learning Configuration
+random_forest:
+  n_estimators: 100
+  max_depth: 10
+  random_state: 42
+  test_size: 0.2
+  features:
+    - CreditScore
+    - Age
+    - Tenure
+    - Balance
+    - NumOfProducts
+    - EstimatedSalary
+    - Geography
+    - Gender
+
+training:
+  cross_validation_folds: 5
+  early_stopping: false
+  save_best_only: true
+
+monitoring:
+  metrics:
+    - accuracy
+    - precision
+    - recall
+    - f1_score
+    - roc_auc
+  drift_detection:
+    enabled: true
+    threshold: 0.05
+
+inference:
+  batch_size: 1000
+  cache_predictions: true

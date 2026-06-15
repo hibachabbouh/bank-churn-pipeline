@@ -1,0 +1,10 @@
+google-cloud-bigquery
+pandas
+pyarrow
+db-dtypes
+minio
+scikit-learn
+joblib
+streamlit
+plotly
+kafka-python
