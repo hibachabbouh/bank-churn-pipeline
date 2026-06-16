@@ -165,6 +165,40 @@ Once the Airflow DAG completes successfully (all tasks are green):
 - Cloud Data Warehouse with BigQuery
 - Interactive prediction dashboard
 
+## Model Selection & Evaluation
+
+In the local experimentation phase, multiple machine learning models were tested on the **Customer Churn Dataset (Kaggle)**, including Logistic Regression, Decision Tree, and ensemble methods.
+
+After comparing their performance, **Random Forest** was selected as the final model due to its superior balance between accuracy, precision, recall, and F1-score.
+
+### Final Model Performance (Random Forest)
+
+The model achieved the following results on the test set:
+
+**Confusion Matrix**
+[[37945 118]
+[ 1747 48357]]
+
+
+### Evaluation Metrics
+
+- **Accuracy:** 0.9788 (97.88%)
+- **Recall:** 0.9651
+- **Precision:** 0.9976
+- **F1-score:** 0.9811
+
+### Why Random Forest?
+
+Random Forest was selected because it consistently outperformed other tested models in local experiments. It provided:
+
+- High **recall (96.5%)**, ensuring most churned customers are correctly detected
+- Very high **precision (99.7%)**, minimizing false churn predictions
+- Strong overall **F1-score (98.1%)**, indicating a balanced and robust model
+
+### Note on Experimental Setup
+
+All models were evaluated locally using an 80/20 train-test split on the Kaggle dataset. The final model was selected based on empirical performance comparisons across multiple algorithms.
+
 ## Troubleshooting
 
 | Issue | Solution |
